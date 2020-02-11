@@ -51,18 +51,18 @@ I hope you like my site! Please hire me!
 
 window.onscroll = function() {scrollFunction()};
 
-var menuScrolltop=250;
-var portfolioScrolltop = 900;
-var resumeScrolltop=3512;
-var educationScrolltop=3700;
-var referencesScrolltop=4579;
-var contactScrolltop=4800;
 
 //to get scroll position,  onclick="alert(document.documentElement.scrollTop)"
 
 if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	function scrollFunction() {
+	var menuScrolltop=250;
 	var scrolltop=Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+	var portfolioScrolltop = document.getElementById("portfolio").offsetTop-300;
+	var resumeScrolltop = document.getElementById("resume").offsetTop-300;
+	var educationScrolltop = document.getElementById("education").offsetTop-300;
+	var referencesScrolltop = document.getElementById("references").offsetTop-300;
+	var contactScrolltop= document.getElementById("contact").offsetTop-800;
 	//menu
 	  if (document.body.scrollTop < 250 || document.documentElement.scrollTop < 250) {
 		document.getElementById("logo").classList.add("logo-big");
@@ -140,8 +140,10 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 
 	
 	<div class="hero" >
-	<img id="hero1" src="portfolio/collage2.png">
-	<img src="portfolio/collage2.png">
+	<img id="hero1" src="portfolio/collage001.png">
+	<img src="portfolio/collage002.png">
+	<img src="portfolio/collage003.png">
+	<img src="portfolio/collage001.png">
 	<div>
 	<h2 style="font-size:2em">Hi! I'm Ace.</h2>
 	<p>I make solutions.</p>
