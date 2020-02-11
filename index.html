@@ -64,7 +64,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	var referencesScrolltop = document.getElementById("references").offsetTop-300;
 	var contactScrolltop= document.getElementById("contact").offsetTop-800;
 	//menu
-	  if (document.body.scrollTop < 250 || document.documentElement.scrollTop < 250) {
+	  if (scrolltop < menuScrolltop) {
 		document.getElementById("logo").classList.add("logo-big");
 		document.getElementById("logo").classList.remove("logo-small");
 	  } else {
