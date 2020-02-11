@@ -130,6 +130,19 @@ h2{
 .well div{
 	margin:10px;
 }
+
+.modal-dialog{
+	width:90%;
+	height:90%;
+}
+
+.mycarosel {
+	height:90% !important;
+}
+
+.carousel-inner .item img {
+    margin: auto;
+  }
 /****************references**************/
 
 .reference{
