@@ -22,23 +22,44 @@ h2{
 	
 }
 
+/************menu************************/
+
 .navbar-brand{
 	-webkit-transition: margin 2s;
 	-webkit-transition: font-size .5s;
 	color:#aaa;
 }
 
+
+
+.inverse-dropdown>li>a{
+    color: #093;
+}
+	
+.inverse-dropdown>li>a:hover{
+      color: #fff;
+      background-color: #000;
+	
+}
+
 .inverse-dropdown{
   background-color: #222;
   border-color: #080808;
-  &>li>a{
-    color: #093;
-    &:hover{
-      color: #fff;
-      background-color: #000;
-    }
-  }
+  &>
 }
+
+
+.navbar-inverse .navbar-nav>li>a, a{
+	color: #093;
+	transition: color .2s;
+	transition-timing-function:ease-out;
+}
+
+.nav>li>a{
+	display:inline-block;
+}
+
+/**************************jubotron********************/
 
 .hero{
 	height:400px;
@@ -124,16 +145,6 @@ h2{
 	border-radius:8px;
 	margin-bottom:100px;
 	padding:20px;
-}
-
-.navbar-inverse .navbar-nav>li>a, a{
-	color: #093;
-	transition: color .2s;
-	transition-timing-function:ease-out;
-}
-
-.nav>li>a{
-	display:inline-block;
 }
 
 
