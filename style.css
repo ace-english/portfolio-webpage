@@ -155,6 +155,23 @@ h2{
 	display:none;
 	flex-shrink:0;
 }
+/****************carosel**************/
+
+.carousel-control{
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.carousel-indicators li{
+	box-shadow: 1px 1px 4px #000000;
+}
+
+.carousel-indicators .active{
+	background-color:  #093;
+}
+
+.carousel{
+	height:100%;
+}
 
 /****************general**************/
 

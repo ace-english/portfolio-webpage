@@ -148,48 +148,43 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	<h2 style="font-size:2em">Hi! I'm Ace.</h2>
 	<p>I make solutions.</p>
 	</div>
-	</div>		<div id="myModal" class="modal fade" role="dialog">
+	</div>		
+	<div id="barberModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-	  <!-- Indicators -->
+	<div id="barberCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+	  
 	  <ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#barberCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#barberCarousel" data-slide-to="1"></li>
+		<li data-target="#barberCarousel" data-slide-to="2"></li>
 	  </ol>
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner">
 		<div class="item active">
 		  <img src="portfolio/barbersign/barbersign.jpg" alt="Wordpress page for growing professional">
-		  <div class="carousel-caption">
+		  <!--<div class="carousel-caption">
 			<p>LA is always so much fun!</p>
-		  </div>
+		  </div>-->
 		</div>
 
 		<div class="item">
 		  <img src="portfolio/barbersign/mobile.jpg" alt="Responsive mobile-first design">
-		  <div class="carousel-caption">
-			<p>LA is always so much fun!</p>
-		  </div>
 		</div>
 
 		<div class="item">
 		  <img src="portfolio/barbersign/forum.jpg" alt="Working forum page">
-		  <div class="carousel-caption">
-			<p>LA is always so much fun!</p>
-		  </div>
 		</div>
 	  </div>
 
 	  <!-- Left and right controls -->
-	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	  <a class="left carousel-control" href="#barberCarousel" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left"></span>
 		<span class="sr-only">Previous</span>
 	  </a>
-	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	  <a class="right carousel-control" href="#barberCarousel" data-slide="next">
 		<span class="glyphicon glyphicon-chevron-right"></span>
 		<span class="sr-only">Next</span>
 	  </a>
@@ -209,7 +204,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	<h2 id="portfolio" class="anchor underline">Portfolio</h2>
 	<h3 id="web" class="anchor">Web Design</h3>
 	<div class="well">
-		<img src="portfolio/barbersign/thumb.png" class="clickable" data-toggle="modal" data-target="#myModal">
+		<img src="portfolio/barbersign/thumb.png" class="clickable" data-toggle="modal" data-target="#barberModal">
 
 		<div>
 		<h4>Barbersign Productions</h4>
