@@ -306,7 +306,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	<p><a href="csus_diploma.pdf" target="_blank">Diploma</a></p>
 	<p><a href="csus_transcript.pdf" target="_blank">Transcript</a></p>
 	<p><a href="deans.pdf" target="_blank">Dean's List</a></p>
-	<p><a href="upe.pdf" target="_blank">Upsilon Pi Epsilon Honor's Society</a></p>
+	<p><a href="upe.pdf" target="_blank">Upsilon Pi Epsilon Honor's Society</a> | <a href="http://upe.acm.org/membership.html">Info</a></p>
 	</div>
 	</div>
 	<h3>American River College</h3>
