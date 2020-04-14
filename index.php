@@ -169,7 +169,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 				
 		echo "</ol>
 
-			  <div class='carousel-inner'>"
+			  <div class='carousel-inner'>";
 			
 			
 			for ($i=0, $i<=$num_photos, $i++){
@@ -195,10 +195,25 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		  </div>
 		</div> ";
 		
+		
+		echo "shit";
+		
 	}
 	
 	function createBarberSlideshow(){
-		echo "<div id='barberCarousel' class='carousel slide' data-ride='carousel' data-interval='0'>
+		echo "fuck"; 
+	}
+	
+	createSlideshow('barbersign', 3);
+	createBarberSlideshow();
+	
+	
+	?>
+	<div id='barberModal' class='modal fade' role='dialog'>
+  <div class='modal-dialog'>
+
+    <!-- Modal content-->
+	<div id='barberCarousel' class='carousel slide' data-ride='carousel' data-interval='0'>
 	  
 	  <ol class='carousel-indicators'>
 		<li data-target='#barberCarousel' data-slide-to='0' class='active'></li>
@@ -233,19 +248,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		<span class='glyphicon glyphicon-chevron-right'></span>
 		<span class='sr-only'>Next</span>
 	  </a>
-	</div>";
-		
-	}
-	
-	createSlideshow('barbersign', 3);
-	createBarberSlideshow();
-	
-	
-	?>
-	<div id='barberModal' class='modal fade' role='dialog'>
-  <div class='modal-dialog'>
-
-   
+	</div>
 
   </div>
 </div>
