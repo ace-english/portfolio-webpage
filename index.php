@@ -34,7 +34,7 @@ I hope you like my site! Please hire me!
 	<link rel='icon' type='image/gif' href='img/icon.png' />
 	<link href = type='text/css' media='print'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	 <link rel='stylesheet' href='style.css'>
+	 <link rel='stylesheet' href='style1.css'>
 	 <link href='https://fonts.googleapis.com/css?family=Fira+Mono|Titillium+Web' rel='stylesheet'>
 	 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-157690547-1'></script>
