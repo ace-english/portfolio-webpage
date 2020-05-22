@@ -156,7 +156,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	
 	
 <?php
-function writeMsg($name) {
+function writeMsg($name, $n) {
   echo "<div id='".$name."Modal' class='modal fade' role='dialog'>
   <div class='modal-dialog'>
 
@@ -164,27 +164,24 @@ function writeMsg($name) {
 	<div id='".$name."Carousel' class='carousel slide' data-ride='carousel' data-interval='0'>
 	  
 	  <ol class='carousel-indicators'>
-		<li data-target='#".$name."Carousel' data-slide-to='0' class='active'></li>
-		<li data-target='#".$name."Carousel' data-slide-to='1'></li>
-		<li data-target='#".$name."Carousel' data-slide-to='2'></li>
-	  </ol>
+		<li data-target='#".$name."Carousel' data-slide-to='0' class='active'></li>";
+	  for($i =1; $i<$n; $i++){
+		echo "<li data-target='#".$name."Carousel' data-slide-to='$i' class='inactive'></li>";
+	  }
+	  echo "</ol>
 
 	  <!-- Wrapper for slides -->
 	  <div class='carousel-inner'>
 		<div class='item active'>
-		  <img src='portfolio/".$name."/0.jpg' alt='Wordpress page for growing professional'>
-		  <!--<div class='carousel-caption'>
-			<p>LA is always so much fun!</p>
-		  </div>-->
-		</div>
-
-		<div class='item'>
-		  <img src='portfolio/".$name."/1.jpg' alt='Responsive mobile-first design'>
-		</div>
-
-		<div class='item'>
-		  <img src='portfolio/".$name."/1.jpg' alt='Working forum page'>
-		</div>
+		  <img src='portfolio/".$name."/0.jpg' alt='Example of work from ".$name."'>
+		</div>";
+		
+	  for($i =1; $i<$n; $i++){
+		echo "<div class='item'>
+		  <img src='portfolio/".$name."/".$i.".jpg' alt='Responsive mobile-first design'>
+		</div>";
+	  }
+	  echo "
 	  </div>
 
 	  <!-- Left and right controls -->
@@ -202,7 +199,8 @@ function writeMsg($name) {
 </div>";
 }
 
-writeMsg("barbersign");
+writeMsg("barbersign", 3);
+writeMsg("rle",4)
 ?>
 	
 <div class='container'>
@@ -226,7 +224,7 @@ writeMsg("barbersign");
 		</div>
 	</div>
 	<div class='well'>
-		<img src='portfolio/rle/thumb.png'>
+		<img src='portfolio/rle/thumb.png' class='clickable' data-toggle='modal' data-target='#rleModal'>
 		<div>
 		<h4>Rio Linda Chamber of Commerce</h4>
 		<p><a href='http://rlechamber.org' target='_blank'>rlechamber.org</a></p>
