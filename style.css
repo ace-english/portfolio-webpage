@@ -85,7 +85,7 @@ h2{
 	display:inline;
     white-space: normal;
 	height:100%;
-	padding:-2px;
+	margin:-2px;
 }
 
 
@@ -112,6 +112,8 @@ h2{
 	margin-bottom:40px;
 }
 
+/****************portfolio**************/
+
 .well{
 	background-color:#222;
 	border-color: #111;
@@ -123,11 +125,26 @@ h2{
 .well img{
 	width:100%;
 	border-radius: 4px;
+	flex-shrink:0;
 }
 
 .well div{
 	margin:10px;
 }
+
+.modal-dialog{
+	width:90%;
+	height:90%;
+}
+
+.mycarosel {
+	height:90% !important;
+}
+
+.carousel-inner .item img {
+    margin: auto;
+  }
+/****************references**************/
 
 .reference{
 	display:flex;
@@ -136,7 +153,27 @@ h2{
 
 .reference img{
 	display:none;
+	flex-shrink:0;
 }
+/****************carosel**************/
+
+.carousel-control{
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.carousel-indicators li{
+	box-shadow: 1px 1px 4px #000000;
+}
+
+.carousel-indicators .active{
+	background-color:  #093;
+}
+
+.carousel{
+	height:100%;
+}
+
+/****************general**************/
 
 .container{
 	color: #aaa;
@@ -161,6 +198,10 @@ h2.anchor{
 	border-bottom: 1px solid #444;
 	padding-bottom:10px;
 
+}
+
+.clickable{
+	cursor:pointer;
 }
 
 /*        desktop              */
