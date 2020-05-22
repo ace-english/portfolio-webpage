@@ -156,7 +156,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	
 	
 <?php
-function writeMsg($name, $n) {
+function lightbox($name, $n) {
   echo "<div id='".$name."Modal' class='modal fade' role='dialog'>
   <div class='modal-dialog'>
 
@@ -199,8 +199,17 @@ function writeMsg($name, $n) {
 </div>";
 }
 
-writeMsg("barbersign", 3);
-writeMsg("rle",4)
+lightbox("barbersign", 3);
+lightbox("rle",4);
+lightbox("scoop",3);
+lightbox("dot",2);
+lightbox("scoopdb",5);
+lightbox("hoard",4);
+lightbox("donut", 3);
+lightbox("dice", 5);
+lightbox("syndra",2);
+lightbox("appidea",4);
+
 ?>
 	
 <div class='container'>
@@ -233,7 +242,7 @@ writeMsg("rle",4)
 		</div>
 	</div>
 	<div class='well'>
-		<img src='portfolio/scoop/thumb.png'>
+		<img src='portfolio/scoop/thumb.png'  class='clickable' data-toggle='modal' data-target='#scoopModal'>
 		<div>
 		<h4>The Scoop Pet Waste Management</h4>
 		<p><a href='https://thescooppwm.com/' target='_blank'>thescooppwm.com</a></p>
@@ -242,7 +251,7 @@ writeMsg("rle",4)
 		</div>
 	</div>
 	<div class='well'>
-		<img src='portfolio/dot/thumb.png'>
+		<img src='portfolio/dot/thumb.png' class='clickable' data-toggle='modal' data-target='#dotModal'>
 		<div>
 		<h4>CalTrans - California Department of Transportation</h4>
 		<p><a href='https://dot.ca.gov/' target='_blank'>dot.ca.gov</a></p>
@@ -252,7 +261,7 @@ writeMsg("rle",4)
 	</div>
 	<h3 id='software' class='anchor'>Software Development</h3>
 	<div class='well'>
-		<img src='portfolio/scoopdb/thumb.png'>
+		<img src='portfolio/scoopdb/thumb.png'  class='clickable' data-toggle='modal' data-target='#scoopdbModal'>
 		<div>
 		<h4>Small Business Billing Software</h4>
 		<p>To help speed up the workflow of a small mom-and-pop business, I created a simple piece of accounting software tailored to their needs. I wrote this from scratch mostly with PHP and mySQL. The initial idea was to generate invoices that matched what the client had been painstakingly creating in Publisher. To do that with haste and efficiency, a database was required to fetch customer data. At first I included a guide to phpMyAdmin and left the client to try out interfacing with the backend themselves, but after it became apparant that would not suffice I created an easy-to-use front end user experience to wrap around the mySQL database instead.</p>
@@ -260,7 +269,7 @@ writeMsg("rle",4)
 		</div>
 	</div>
 	<div class='well'>
-		<img src='portfolio/hoard/thumb.png'>
+		<img src='portfolio/hoard/thumb.png'  class='clickable' data-toggle='modal' data-target='#hoardModal'>
 		<div>
 		<h4>3D Asymetric Networked Game - Hoard!</h4>
 		<p>In my university coursework I took a game architecture class and I am very proud of my finished product. It uses a student-built engine and utelizes collision physics, procedural map generation, listener architecture, 3D sound desgin, and AI fuzzy logic decision making. I wrote this mostly in Java with some python scripting.</p>
@@ -269,21 +278,21 @@ writeMsg("rle",4)
 	</div>
 	<h3 id='art' class='anchor'>Art</h3>
 	<div class='well'>
-		<img src='portfolio/donut/thumb.png'>
+		<img src='portfolio/donut/thumb.png'  class='clickable' data-toggle='modal' data-target='#donutModal'>
 		<div>
 		<h4>Breakfast at mountain cafe</h4>
 		<p>I made this in Blender 2.8 over 7 hours. I utelized UV mapping, shader materials, particle effects, scultping, fluid simulation, and lighting composition. You can almost taste it.</p>
 		</div>
 	</div>
 	<div class='well'>
-		<img src='portfolio/dice/thumb.png'>
+		<img src='portfolio/dice/thumb.png'  class='clickable' data-toggle='modal' data-target='#diceModal'>
 		<div>
 		<h4>Still Life - Final Project</h4>
 		<p>This was made as part of an art course in university. In this course I learned the fundamentals of 3D modeling, art, and composition, including materials, lighting, shading, modeling techniques, materials, bump mapping, UV mapping and composition. </p>
 		</div>
 	</div>
 	<div class='well'>
-		<img src='portfolio/syndra/thumb.png'>
+		<img src='portfolio/syndra/thumb.png'  class='clickable' data-toggle='modal' data-target='#syndraModal'>
 		<div>
 		<h4>Art Nouveau Fanart</h4>
 		<p>For copyright reasons I must remark that I do not own the IP of the subject matter of this piece, because she is a character from League of Legends. I made this as a birthday gift to a friend who is a big fan of the character and the artistic style of Alphonse Mucha. This piece took about 20 hours and was made in GIMP.</p>
@@ -291,7 +300,7 @@ writeMsg("rle",4)
 	</div>
 	<h3 id='fun' class='anchor'>Just for fun</h3>
 	<div class='well'>
-		<img src='portfolio/appidea/thumb.png'>
+		<img src='portfolio/appidea/thumb.png'  class='clickable' data-toggle='modal' data-target='#appideaModal'>
 		<div class='description'>
 		<h4>Joke app idea generator</h4>
 		<p><a target='_blank' href='http://ihaveagreatappidea.com'>ihaveagreatappidea.com</a></p>
