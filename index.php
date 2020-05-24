@@ -269,6 +269,14 @@ lightbox("appidea",4);
 		</div>
 	</div>
 	<div class='well'>
+		<img src='portfolio/scoopdb/thumb.png'  class='clickable' data-toggle='modal' data-target='#scoopdbModal'>
+		<div>
+		<h4>Small Business Billing Software</h4>
+		<p>To help speed up the workflow of a small mom-and-pop business, I created a simple piece of accounting software tailored to their needs. I wrote this from scratch mostly with PHP and mySQL. The initial idea was to generate invoices that matched what the client had been painstakingly creating in Publisher. To do that with haste and efficiency, a database was required to fetch customer data. At first I included a guide to phpMyAdmin and left the client to try out interfacing with the backend themselves, but after it became apparant that would not suffice I created an easy-to-use front end user experience to wrap around the mySQL database instead.</p>
+		<p>This project gave me experience communicating with non-technical clients about requirements and expectations. I also had the valuable experience of finding that the old requirements were insufficient and needed more development. The client is happy with the product and hasn't gone back to using Publisher.</p>
+		</div>
+	</div>
+	<div class='well'>
 		<img src='portfolio/hoard/thumb.png'  class='clickable' data-toggle='modal' data-target='#hoardModal'>
 		<div>
 		<h4>3D Asymetric Networked Game - Hoard!</h4>
