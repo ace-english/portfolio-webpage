@@ -68,7 +68,7 @@ h2{
     white-space: nowrap;
 }
 
-
+/*
 @keyframes slide {
 	0%		{margin-left:0px;}
 	15%		{margin-left:0px;}
@@ -80,17 +80,43 @@ h2{
 	95%		{margin-left:-3339px;}
 	100%	{margin-left:-4778px;}
 }
+*/
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 
 
 .hero img{
 	display:inline;
     white-space: normal;
 	height:100%;
-	margin:-2px;
+	margin-left:-200px;
+	clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+	filter: 
+		blur(1px) 
+		drop-shadow(16px 16px 20px red)
+		grayscale(40%)
+		brightness(0.7);
+	
+	
 }
 
 
-.hero div{
+#hero1{
+	margin-left:-400px;
+}
+
+.hero-inner{
+  animation: marquee 50s linear infinite;
+ }
+
+
+.hero-name{
 	padding:25px;
 	background-color: rgba(0, 0, 0, .85);
 	display:inline-block;

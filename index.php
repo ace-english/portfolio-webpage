@@ -34,7 +34,7 @@ I hope you like my site! Please hire me!
 	<link rel='icon' type='image/gif' href='img/icon.png' />
 	<link href = type='text/css' media='print'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	 <link rel='stylesheet' href='style.css'>
+	 <link rel='stylesheet' href='style.css?<?php echo time(); ?>'/>
 	 <link href='https://fonts.googleapis.com/css?family=Fira+Mono|Titillium+Web' rel='stylesheet'>
 	 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-157690547-1'></script>
@@ -140,14 +140,19 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 
 	
 	<div class='hero' >
-	<img id='hero1' src='portfolio/collage001.png'>
-	<img src='portfolio/collage002.png'>
-	<img src='portfolio/collage003.png'>
-	<img src='portfolio/collage001.png'>
-	<img src='portfolio/collage002.png'>
-	<img src='portfolio/collage003.png'>
-	<img src='portfolio/collage001.png'>
-	<div>
+	<div class="hero-inner">
+	<img src='portfolio/hero/0.png'  id='hero1'>
+	<img src='portfolio/hero/1.png'>
+	<img src='portfolio/hero/2.png'>
+	<img src='portfolio/hero/3.png'>
+	<img src='portfolio/hero/4.png'>
+	<img src='portfolio/hero/5.png'>
+	<img src='portfolio/hero/6.png'>
+	<img src='portfolio/hero/7.png'>
+	<img src='portfolio/hero/8.png'>
+	<img src='portfolio/hero/0.png'>
+	</div>
+	<div class="hero-name">
 	<h2 style='font-size:2em'>Hi! I'm Ace.</h2>
 	<p>I make solutions.</p>
 	</div>
@@ -223,6 +228,37 @@ lightbox("trafficsim",7);
 	<p>I look forward to working with you!</p>
 	<p>-Ace</p>
 	<h2 id='portfolio' class='anchor underline'>Portfolio</h2>
+	<h3 id='software' class='anchor'>Software Development</h3>
+	<div class='well'>
+		<img src='portfolio/trafficsim/thumb.png'  class='clickable' data-toggle='modal' data-target='#trafficsimModal'>
+		<div>
+		<h4>Senior Project - Driving Sim</h4>
+		<p>CSU seniors are required to participate in a group oriented senior project, which involves client meetings to obtain requirements and two-week sprint style AGILE development. I led a team of seniors to create a software solution for the civil engineering department: a VR driving sim that can be used to collect reaction data. Driving simulators that exist on the market are extremely pricy, and our aim was to create one that requires less expensive tech by utilizaing Unreal 4's native virtual reality compatibility. In this project I worked on C++ code, assets, UX design, and practiced a fair bit of management process as I fell into a team leader role.</p>
+		</div>
+	</div>
+	<div class='well'>
+		<img src='portfolio/mushrooms/thumb.png'  class='clickable' data-toggle='modal' data-target='#mushroomsModal'>
+		<div>
+		<h4>Photorecognition AI - Mushroom Identification</h4>
+		<p>In Python using Tensorflow I wrote a neural network to identify a mushroom's edibility based on a photograph. This project required merging two datasets, by training a convoluted neural network to make predictions about a mushroom's characteristics based on a photograph, and another to identify edibility based on those characteristics. The resulting neural network has a precision of 99% and an average recall of 96%. The full writeup can be read in this <a href="portfolio/mushrooms/report.pdf" target="_blank">report</a>. This project only works on agaricus mushrooms but could be scaled to apply to more genuses with the injection of new data.</p>
+		</div>
+	</div>
+	<div class='well'>
+		<img src='portfolio/scoopdb/thumb.png'  class='clickable' data-toggle='modal' data-target='#scoopdbModal'>
+		<div>
+		<h4>Small Business Billing Software</h4>
+		<p>To help speed up the workflow of a small mom-and-pop business, I created a simple piece of accounting software tailored to their needs. I wrote this from scratch mostly with PHP and mySQL. The initial idea was to generate invoices that matched what the client had been painstakingly creating in Publisher. To do that with haste and efficiency, a database was required to fetch customer data. At first I included a guide to phpMyAdmin and left the client to try out interfacing with the backend themselves, but after it became apparant that would not suffice I created an easy-to-use front end user experience to wrap around the mySQL database instead.</p>
+		<p>This project gave me experience communicating with non-technical clients about requirements and expectations. I also had the valuable experience of finding that the old requirements were insufficient and needed more development. The client is happy with the product and hasn't gone back to using Publisher.</p>
+		</div>
+	</div>
+	<div class='well'>
+		<img src='portfolio/hoard/thumb.png'  class='clickable' data-toggle='modal' data-target='#hoardModal'>
+		<div>
+		<h4>3D Asymetric Networked Game - Hoard!</h4>
+		<p>In my university coursework I took a game architecture class and I am very proud of my finished product. It uses a student-built engine and utelizes collision physics, procedural map generation, listener architecture, 3D sound desgin, and AI fuzzy logic decision making. I wrote this mostly in Java with some python scripting.</p>
+		<p>I think this game could use improvement particularly on its graphics, so as a hobby I have been reworking it in Unreal using C++. Stay posted for updates.</p>
+		</div>
+	</div>
 	<h3 id='web' class='anchor'>Web Design</h3>
 	<div class='well'>
 		<img src='portfolio/barbersign/thumb.png' class='clickable' data-toggle='modal' data-target='#barbersignModal'>
@@ -258,37 +294,6 @@ lightbox("trafficsim",7);
 		<p><a href='https://dot.ca.gov/' target='_blank'>dot.ca.gov</a></p>
 		<p>In college I interned at the California Department of Transportation in their web department and helped them migrate their site in a critical time period. Some days I fixed up to 90 pages a day.</p>
 		<p>For this project we used Sitecore CMS. I worked mostly in HTML and CSS. To speed up my workflow I made frequent use of RegEx to find compliance issues, errors, and bad coding practices. I also got experience with Google Analytics and WCAG web accessibility requirements. And, of course, I got a lot of practice working in a team.</p>
-		</div>
-	</div>
-	<h3 id='software' class='anchor'>Software Development</h3>
-	<div class='well'>
-		<img src='portfolio/trafficsim/thumb.png'  class='clickable' data-toggle='modal' data-target='#trafficsimModal'>
-		<div>
-		<h4>Senior Project - Driving Sim</h4>
-		<p>CSU seniors are required to participate in a group oriented senior project, which involves client meetings to obtain requirements and two-week sprint style AGILE development. I led a team of seniors to create a software solution for the civil engineering department: a VR driving sim that can be used to collect reaction data. Driving simulators that exist on the market are extremely pricy, and our aim was to create one that requires less expensive tech by utilizaing Unreal 4's native virtual reality compatibility. In this project I worked on C++ code, assets, UX design, and practices a fair bit of management process as I fell into a team leader role.</p>
-		</div>
-	</div>
-	<div class='well'>
-		<img src='portfolio/mushrooms/thumb.png'  class='clickable' data-toggle='modal' data-target='#mushroomsModal'>
-		<div>
-		<h4>Photorecognition AI - Mushroom Identification</h4>
-		<p>In Python using Tensorflow I wrote a neural network to identify a mushroom's edibility based on a photograph. This project required merging two datasets, by training a convoluted neural network to make predictions about a mushroom's characteristics based on a photograph, and another to identify edibility based on those characteristics. The resulting neural network has an accuracy of 99% and an average recall of 99%. The full writeup can be read in this <a href="mushrooms/report.pdf" target="_blank">report</a>. This project only works on agaricus mushrooms but could be scaled to apply to more genuses with the injection of new data.</p>
-		</div>
-	</div>
-	<div class='well'>
-		<img src='portfolio/scoopdb/thumb.png'  class='clickable' data-toggle='modal' data-target='#scoopdbModal'>
-		<div>
-		<h4>Small Business Billing Software</h4>
-		<p>To help speed up the workflow of a small mom-and-pop business, I created a simple piece of accounting software tailored to their needs. I wrote this from scratch mostly with PHP and mySQL. The initial idea was to generate invoices that matched what the client had been painstakingly creating in Publisher. To do that with haste and efficiency, a database was required to fetch customer data. At first I included a guide to phpMyAdmin and left the client to try out interfacing with the backend themselves, but after it became apparant that would not suffice I created an easy-to-use front end user experience to wrap around the mySQL database instead.</p>
-		<p>This project gave me experience communicating with non-technical clients about requirements and expectations. I also had the valuable experience of finding that the old requirements were insufficient and needed more development. The client is happy with the product and hasn't gone back to using Publisher.</p>
-		</div>
-	</div>
-	<div class='well'>
-		<img src='portfolio/hoard/thumb.png'  class='clickable' data-toggle='modal' data-target='#hoardModal'>
-		<div>
-		<h4>3D Asymetric Networked Game - Hoard!</h4>
-		<p>In my university coursework I took a game architecture class and I am very proud of my finished product. It uses a student-built engine and utelizes collision physics, procedural map generation, listener architecture, 3D sound desgin, and AI fuzzy logic decision making. I wrote this mostly in Java with some python scripting.</p>
-		<p>I think this game could use improvement particularly on its graphics, so as a hobby I have been reworking it in Unreal using C++. Stay posted for updates.</p>
 		</div>
 	</div>
 	<h3 id='art' class='anchor'>Art</h3>
