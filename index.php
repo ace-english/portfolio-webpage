@@ -216,12 +216,11 @@ lightbox("trafficsim",7);
 	
 <div class='container'>
 	<h2>Welcome</h2>
-	<p>If you are looking for a freelance web designer you've come to the right place.</p>
-	<p>Does your small business need a place to stand out on Google? I can help, without busting your bank.</p>
-	<p> I offer reasonable rates and can make lightning-fast websites using javascript and jQuery to suit your needs, or can work with you on the CMS of your choice such as Wordpress to make sure you have a homepage you fall in love with.</p>
-	<p> We can do advanced, responsive designs or simple lightweight ones, depending on your needs and budget.</p>
+	<p>My name is Ace, and I'm a fresh graduate looking for work.</p>
+	<p>I graduated from California State University, Sacramento with a 3.7 GPA and a Bachelor's degree in Computer Science, with a minor in Mathematics and a certificate in Game Design. In school I learned Java, C/C++, Python, and SQL, as well as how to manage deadlines and work with others. In my work as a freelancer and web developer I have gained skills in HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, Wordpress, Sitecore, and Drupal. In a range of personal projects and interests, I have also picked up proficiency with various tools for 3D Modeling, graphic design, and game development.</p>
+	<p>My experience working with others have given me strong communication skills, and my love of creative pursuit has given me a passion to make the absolute best product possible within constraints. I'm used to working on deadlines and within requirements, with client oversight and with clients who have very little industry knowlege. I hope my broad range of skills can be of use to you!</p>
 	<p>Email me at <a href='mailto:admin@ace-development.com'>admin@ace-development.com</a> so we can make a deal.</p>
-	<p>I look forward to working with you.</p>
+	<p>I look forward to working with you!</p>
 	<p>-Ace</p>
 	<h2 id='portfolio' class='anchor underline'>Portfolio</h2>
 	<h3 id='web' class='anchor'>Web Design</h3>
@@ -376,7 +375,7 @@ going to be a successful computer scientist, whether she chooses a career in ind
 		</blockquote>
 	</div>
 	<h2 id='contact' class='anchor underline'>Contact</h2>
-	<p>If you have a project you'd like me to work on, please contact me so we can discuss rates. I am always excited to be a part of a team that works to improve the lives of people.</p>
+	<p>If you have a project you'd like me to work on, or a position on your team, please contact me. I am always excited to put my skills to good use.</p>
 	<p>Email: <a href='mailto:admin@ace-development.com'>admin@ace-development.com</a></p>
 	<div style='height:100px;'></div>
 </div>
