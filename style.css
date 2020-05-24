@@ -79,7 +79,8 @@ h2{
 	margin-left:-300px;
 	clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
 	filter: 
-		drop-shadow(16px 16px 20px red)
+		drop-shadow(16px 0px 6px black)
+		drop-shadow(-16px 0px 6px black)
 		grayscale(40%)
 		brightness(0.7);
 	
