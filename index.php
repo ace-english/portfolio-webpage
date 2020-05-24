@@ -209,6 +209,8 @@ lightbox("donut", 3);
 lightbox("dice", 5);
 lightbox("syndra",2);
 lightbox("appidea",4);
+lightbox("mushrooms",5);
+lightbox("trafficsim",7);
 
 ?>
 	
@@ -261,11 +263,17 @@ lightbox("appidea",4);
 	</div>
 	<h3 id='software' class='anchor'>Software Development</h3>
 	<div class='well'>
-		<img src='portfolio/scoopdb/thumb.png'  class='clickable' data-toggle='modal' data-target='#scoopdbModal'>
+		<img src='portfolio/trafficsim/thumb.png'  class='clickable' data-toggle='modal' data-target='#trafficsimModal'>
 		<div>
-		<h4>Small Business Billing Software</h4>
-		<p>To help speed up the workflow of a small mom-and-pop business, I created a simple piece of accounting software tailored to their needs. I wrote this from scratch mostly with PHP and mySQL. The initial idea was to generate invoices that matched what the client had been painstakingly creating in Publisher. To do that with haste and efficiency, a database was required to fetch customer data. At first I included a guide to phpMyAdmin and left the client to try out interfacing with the backend themselves, but after it became apparant that would not suffice I created an easy-to-use front end user experience to wrap around the mySQL database instead.</p>
-		<p>This project gave me experience communicating with non-technical clients about requirements and expectations. I also had the valuable experience of finding that the old requirements were insufficient and needed more development. The client is happy with the product and hasn't gone back to using Publisher.</p>
+		<h4>Senior Project - Driving Sim</h4>
+		<p>CSU seniors are required to participate in a group oriented senior project, which involves client meetings to obtain requirements and two-week sprint style AGILE development. I led a team of seniors to create a software solution for the civil engineering department: a VR driving sim that can be used to collect reaction data. Driving simulators that exist on the market are extremely pricy, and our aim was to create one that requires less expensive tech by utilizaing Unreal 4's native virtual reality compatibility. In this project I worked on C++ code, assets, UX design, and practices a fair bit of management process as I fell into a team leader role.</p>
+		</div>
+	</div>
+	<div class='well'>
+		<img src='portfolio/mushrooms/thumb.png'  class='clickable' data-toggle='modal' data-target='#mushroomsModal'>
+		<div>
+		<h4>Photorecognition AI - Mushroom Identification</h4>
+		<p>In Python using Tensorflow I wrote a neural network to identify a mushroom's edibility based on a photograph. This project required merging two datasets, by training a convoluted neural network to make predictions about a mushroom's characteristics based on a photograph, and another to identify edibility based on those characteristics. The resulting neural network has an accuracy of 99% and an average recall of 99%. The full writeup can be read in this <a href="mushrooms/report.pdf" target="_blank">report</a>. This project only works on agaricus mushrooms but could be scaled to apply to more genuses with the injection of new data.</p>
 		</div>
 	</div>
 	<div class='well'>
@@ -353,7 +361,6 @@ lightbox("appidea",4);
 		<blockquote> Her demeanor is very professional and she is certainly
 going to be a successful computer scientist, whether she chooses a career in industry or academia. She gets along well with other students and will make a great team member.
 		<footer>V. Scott Gordon, Professor</footer>
-		<a target='_blank' href='http://athena.ecs.csus.edu/~gordonvs/'>Scott Gordon Homepage</a>
 		</blockquote>
 	</div>
 	<div class='reference'>
