@@ -69,33 +69,14 @@ h2{
 }
 
 
-@keyframes slide {
-	0%		{margin-left:-400px;}
-	3%		{margin-left:-400px;}
-	6%		{margin-left:-1600px;}
-	16%		{margin-left:-1600px;}
-	19%		{margin-left:-2800px;}
-	29%		{margin-left:-2800px;}
-	32%		{margin-left:-4000px;}
-	42%		{margin-left:-4000px;}
-	45%		{margin-left:-5200px;}
-	55%		{margin-left:-5200px;}
-	58%		{margin-left:-6400px;}
-	61%		{margin-left:-6400px;}
-	64%		{margin-left:-7600px;}
-	74%		{margin-left:-7600px;}
-	77%		{margin-left:-8800px;}
-	87%		{margin-left:-8800px;}
-	90%		{margin-left:-10000px;}
-	100%	{margin-left:-10000px;}
-}
+
 
 
 .hero img{
 	display:inline;
     white-space: normal;
 	height:100%;
-	margin-left:-200px;
+	margin-left:-300px;
 	clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
 	filter: 
 		drop-shadow(16px 16px 20px red)

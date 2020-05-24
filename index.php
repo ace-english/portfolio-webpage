@@ -37,6 +37,36 @@ I hope you like my site! Please hire me!
 	 <link rel='stylesheet' href='style.css?<?php echo time(); ?>'/>
 	 <link href='https://fonts.googleapis.com/css?family=Fira+Mono|Titillium+Web' rel='stylesheet'>
 	 <!-- Global site tag (gtag.js) - Google Analytics -->
+	 
+	 <style>
+	 @keyframes slide {
+	 <?php
+	 
+	$transition_time= 5;
+	$slide_time= 8;
+	$interval=-1200;
+	
+	$percentage=0;
+	$margin=-400;
+	//initial position
+	 echo $percentage."%		{margin-left:".$margin."px;}\n";
+	 //hang for a beat
+	 $percentage+=$transition_time;
+	 echo $percentage."%		{margin-left:".$margin."px;}\n";
+	 //begin transitions
+	 while($percentage<=100){
+		 $percentage+=$transition_time;
+		 $margin+=$interval;
+		 echo $percentage."%		{margin-left:".$margin."px;}\n";
+		 $percentage+=$slide_time;
+		 echo $percentage."%		{margin-left:".$margin."px;}\n";
+	 }
+	
+	?>
+	 }
+	 </style>
+	 
+	 
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-157690547-1'></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -139,6 +169,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 </nav>
 
 	
+	
 	<div class='hero' >
 	<img src='portfolio/hero/0.png'  id='hero1'>
 	<img src='portfolio/hero/1.png'>
@@ -150,6 +181,14 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	<img src='portfolio/hero/7.png'>
 	<img src='portfolio/hero/8.png'>
 	<img src='portfolio/hero/0.png'>
+	<img src='portfolio/hero/1.png'>
+	<img src='portfolio/hero/2.png'>
+	<img src='portfolio/hero/3.png'>
+	<img src='portfolio/hero/4.png'>
+	<img src='portfolio/hero/5.png'>
+	<img src='portfolio/hero/6.png'>
+	<img src='portfolio/hero/7.png'>
+	<img src='portfolio/hero/8.png'>
 	<div class="hero-name">
 	<h2 style='font-size:2em'>Hi! I'm Ace.</h2>
 	<p>I make solutions.</p>
