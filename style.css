@@ -68,10 +68,10 @@ h2{
     white-space: nowrap;
 }
 
-/*
+
 @keyframes slide {
-	0%		{margin-left:0px;}
-	15%		{margin-left:0px;}
+	0%		{margin-left:-400px;}
+	15%		{margin-left:-400px;}
 	20%		{margin-left:-963px;}
 	40%		{margin-left:-964px;}
 	50%		{margin-left:-2250px;}
@@ -79,15 +79,6 @@ h2{
 	70%		{margin-left:-3339px;}
 	95%		{margin-left:-3339px;}
 	100%	{margin-left:-4778px;}
-}
-*/
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
 }
 
 
@@ -103,17 +94,7 @@ h2{
 		grayscale(40%)
 		brightness(0.7);
 	
-	
 }
-
-
-#hero1{
-	margin-left:-400px;
-}
-
-.hero-inner{
-  animation: marquee 50s linear infinite;
- }
 
 
 .hero-name{
@@ -127,6 +108,7 @@ h2{
 }
 
 #hero1{
+	margin-left:-400px;
 	animation-name:slide;
 	animation-duration:30s;
   animation-iteration-count: infinite;

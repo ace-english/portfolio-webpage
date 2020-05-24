@@ -140,7 +140,6 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 
 	
 	<div class='hero' >
-	<div class="hero-inner">
 	<img src='portfolio/hero/0.png'  id='hero1'>
 	<img src='portfolio/hero/1.png'>
 	<img src='portfolio/hero/2.png'>
@@ -151,7 +150,6 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	<img src='portfolio/hero/7.png'>
 	<img src='portfolio/hero/8.png'>
 	<img src='portfolio/hero/0.png'>
-	</div>
 	<div class="hero-name">
 	<h2 style='font-size:2em'>Hi! I'm Ace.</h2>
 	<p>I make solutions.</p>
