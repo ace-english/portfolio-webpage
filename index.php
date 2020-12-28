@@ -154,8 +154,8 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
       <ul class='nav navbar-nav'>
 			<li id='portfolio-anchor'><a href='#portfolio' style='padding-right:0;'>Portfolio </a><a class='dropdown-toggle' data-toggle='dropdown'> <span class='caret' style='padding-left:0;'></span></a>
 				<ul class='dropdown-menu inverse-dropdown'>
-					<li><a href='#web'>Web</a></li>
 					<li><a href='#software'>Software</a></li>
+					<li><a href='#web'>Web</a></li>
 					<li><a href='#art'>Art</a></li>
 					<li><a href='#fun'>Just for Fun</a></li>
 				</ul></li>
@@ -310,7 +310,7 @@ lightbox("trafficsim",7);
 		<img src='portfolio/rle/thumb.png' class='clickable' data-toggle='modal' data-target='#rleModal'>
 		<div>
 		<h4>Rio Linda Chamber of Commerce</h4>
-		<p><a href='http://rlechamber.org' target='_blank'>rlechamber.org</a></p>
+		<!--<p><a href='http://rlechamber.org' target='_blank'>rlechamber.org</a></p>-->
 		<p>A local community web page was sorely in need of a revamp, not only on the front end but also the back end. There was no content management system in place or procedural generation of content, and the old layout was some of the most outdated non-intuitive design I have ever seen.</p>
 		<p>I remade the site incorporating given photos and content along a theme the clients selected. I also tailored a javascript file that was easy to update for when the community wanted to add a new business to the list of board members, update a photo, or add or modify an event in the community calendar. I wrote this page from javascript, HTML and CSS, using some open-source javascript libraries for advanced features.</p>
 		</div>
